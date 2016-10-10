@@ -1,0 +1,9 @@
+php_flag html_errors On
+php_flag desplay_errors On
+php_flag log_errors On
+php_value errror_log /home/cobox/workspace/log/error
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) index.php [L]
